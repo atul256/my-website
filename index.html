@@ -1,20 +1,169 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Atul Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #111;
+      border-radius: 20px;
+      padding: 30px 20px;
+      box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
+    }
+
+    .robot {
+      font-size: 55px;
+      margin-bottom: 10px;
+    }
+
+    .wave {
+      font-size: 28px;
+      display: inline-block;
+      animation: wave 1.5s infinite;
+      margin-left: 8px;
+    }
+
+    @keyframes wave {
+      0% { transform: rotate(0deg); }
+      15% { transform: rotate(14deg); }
+      30% { transform: rotate(-8deg); }
+      40% { transform: rotate(14deg); }
+      50% { transform: rotate(-4deg); }
+      60% { transform: rotate(10deg); }
+      100% { transform: rotate(0deg); }
+    }
+
+    h1 {
+      font-size: 34px;
+      color: cyan;
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      font-size: 20px;
+      color: #ffcc00;
+      margin-bottom: 18px;
+    }
+
+    p {
+      font-size: 17px;
+      line-height: 1.8;
+      margin-bottom: 14px;
+      color: #ddd;
+    }
+
+    .section-title {
+      color: cyan;
+      margin-top: 20px;
+      margin-bottom: 12px;
+      font-size: 24px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    .skill {
+      background: #1f1f1f;
+      border: 1px solid cyan;
+      color: cyan;
+      padding: 10px 16px;
+      border-radius: 30px;
+      font-size: 15px;
+      box-shadow: 0 0 10px rgba(0,255,255,0.15);
+    }
+
+    .about-box {
+      background: #1a1a1a;
+      border-left: 4px solid cyan;
+      padding: 18px;
+      border-radius: 12px;
+      margin-top: 10px;
+      box-shadow: 0 0 12px rgba(0,255,255,0.08);
+    }
+
+    .footer {
+      margin-top: 30px;
+      font-size: 14px;
+      color: #aaa;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 28px;
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+
+      .section-title {
+        font-size: 20px;
+      }
+
+      .robot {
+        font-size: 48px;
+      }
+    }
+  </style>
 </head>
-<body style="background:black; color:white; text-align:center; font-family:Arial; padding:40px;">
+<body>
 
-  <h1 style="color:cyan;">Hi! I'm ATUL PATEL 👋</h1>
-  <h2 style="color:yellow;">Beginner Web Developer</h2>
+  <div class="container">
+    <div class="robot">🤖</div>
 
-  <p>My goal is to become a smart and creative web developer.</p>
+    <h1>Hi! I'm ATUL PATEL <span class="wave">👋</span></h1>
+    <h2>Beginner Web Developer</h2>
 
-  <h3 style="color:cyan;">My Skills</h3>
-  <p>HTML | CSS | JavaScript (Learning) | GitHub</p>
+    <p>My goal is to become a smart and creative web developer.</p>
 
-  <h3 style="color:cyan;">About Me</h3>
-  <p>Hello! My name is Atul Patel. I am learning web development.</p>
+    <h3 class="section-title">My Skills</h3>
+    <div class="skills">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript (Learning)</div>
+      <div class="skill">GitHub</div>
+    </div>
+
+    <h3 class="section-title">About Me</h3>
+    <div class="about-box">
+      <p>
+        Hello! My name is Atul Patel. I am learning web development and building cool websites.
+        I love creating simple, attractive, and creative projects.
+      </p>
+    </div>
+
+    <div class="footer">
+      Made with ❤️ by ATUL PATEL
+    </div>
+  </div>
 
 </body>
 </html>
