@@ -1,168 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>Atul Portfolio</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
       font-family: Arial, sans-serif;
     }
 
-    body {
-      background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
-      color: white;
-      text-align: center;
-      padding: 20px;
+    body{padding: 20px;
+      background:#0d0d0d;
+      color:white;
+      text-align:center;
+      padding:20px;
     }
 
-    .container {
-      max-width: 900px;
-      margin: auto;
-      background: #111;
-      border-radius: 20px;
-      padding: 30px 20px;
-      box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
+    .box{
+      max-width:400px;
+      margin:auto;
+      padding:20px;
+      background:#111;
+      border-radius:20px;
+      box-shadow:0 0 20px rgba(0,255,255,0.2);
     }
 
-    .robot {
-      font-size: 55px;
-      margin-bottom: 10px;
+    .profile{
+      width:120px;
+      height:120px;
+      border-radius:50%;
+      object-fit:cover;
+      border:3px solid cyan;
+      margin-bottom:15px;
     }
 
-    .wave {
-      font-size: 28px;
-      display: inline-block;
-      animation: wave 1.5s infinite;
-      margin-left: 8px;
+    h1{
+      font-size:32px;
+      color:cyan;
+      margin-bottom:10px;
     }
 
-    @keyframes wave {
-      0% { transform: rotate(0deg); }
-      15% { transform: rotate(14deg); }
-      30% { transform: rotate(-8deg); }
-      40% { transform: rotate(14deg); }
-      50% { transform: rotate(-4deg); }
-      60% { transform: rotate(10deg); }
-      100% { transform: rotate(0deg); }
+    h2{
+      font-size:20px;
+      color:#ffcc00;
+      margin-bottom:15px;
     }
 
-    h1 {
-      font-size: 34px;
-      color: cyan;
-      margin-bottom: 8px;
+    p{
+      font-size:16px;
+      line-height:1.6;
+      margin-bottom:20px;
+      color:#ddd;
     }
 
-    h2 {
-      font-size: 20px;
-      color: #ffcc00;
-      margin-bottom: 18px;
+    .btn{
+      display:inline-block;
+      text-decoration:none;
+      background:cyan;
+      color:black;
+      padding:12px 20px;
+      margin:8px;
+      border-radius:10px;
+      font-weight:bold;
     }
 
-    p {
-      font-size: 17px;
-      line-height: 1.8;
-      margin-bottom: 14px;
-      color: #ddd;
+    .btn:hover{
+      background:#00bcd4;
     }
 
-    .section-title {
-      color: cyan;
-      margin-top: 20px;
-      margin-bottom: 12px;
-      font-size: 24px;
+    .section{
+      margin-top:30px;
+      text-align:left;
     }
 
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 12px;
-      margin-top: 10px;
-      margin-bottom: 20px;
+    .section h3{
+      color:#00ff99;
+      margin-bottom:10px;
+      text-align:center;
     }
 
-    .skill {
-      background: #1f1f1f;
-      border: 1px solid cyan;
-      color: cyan;
-      padding: 10px 16px;
-      border-radius: 30px;
-      font-size: 15px;
-      box-shadow: 0 0 10px rgba(0,255,255,0.15);
+    .card{
+      background:#1a1a1a;
+      padding:15px;
+      border-radius:12px;
+      margin-bottom:15px;
     }
 
-    .about-box {
-      background: #1a1a1a;
-      border-left: 4px solid cyan;
-      padding: 18px;
-      border-radius: 12px;
-      margin-top: 10px;
-      box-shadow: 0 0 12px rgba(0,255,255,0.08);
-    }
+    footer{
+      margin-top:30px;
+      color:#888;
+      font-size:14px;
+  
+ .profile-circle 
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #00eaff;
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  box-shadow: 0 0 20px #00eaff; </style>
 
-    .footer {
-      margin-top: 30px;
-      font-size: 14px;
-      color: #aaa;
-    }
-
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 28px;
-      }
-
-      h2 {
-        font-size: 18px;
-      }
-
-      p {
-        font-size: 15px;
-      }
-
-      .section-title {
-        font-size: 20px;
-      }
-
-      .robot {
-        font-size: 48px;
-      }
-    }
-  </style>
 </head>
 <body>
 
-  <div class="container">
-    <div class="robot">🤖</div>
+  <div class="box">
+    <img src="https://i.postimg.cc/Rh1GPMST/1000005044.jpg" class="profile" alt="Profile">
+    <h1>ATUL PATEL</h1>
+    <h2>Future Web Developer ⚡</h2>
+<div class="robot">👨🏻‍💻 | 🤖</div>
+    <p>
+      Hello! My name is Atul. I am currently learning coding and building my first website using my phone.
+    </p>
+  <a href="https://wa.me/919936724212" class="btn">WhatsApp</a>
+<a href="mailto:yourgmail@gmail.com" class="btn">Email</a>
 
-    <h1>Hi! I'm ATUL PATEL <span class="wave">👋</span></h1>
-    <h2>Beginner Web Developer</h2>
-
-    <p>My goal is to become a smart and creative web developer.</p>
-
-    <h3 class="section-title">My Skills</h3>
-    <div class="skills">
-      <div class="skill">HTML</div>
-      <div class="skill">CSS</div>
-      <div class="skill">JavaScript (Learning)</div>
-      <div class="skill">GitHub</div>
+    <div class="section">
+      <h3>My Skills</h3>
+      <div class="card">💻 Learning Web Development</div>
+<div class="card">🎮 Gaming Enthusiast</div>
+<div class="card">🎬 Video Editing</div>
     </div>
 
-    <h3 class="section-title">About Me</h3>
-    <div class="about-box">
-      <p>
-        Hello! My name is Atul Patel. I am learning web development and building cool websites.
-        I love creating simple, attractive, and creative projects.
-      </p>
+    <div class="section">
+      <h3>My Goal</h3>
+      <div class="card">
+        My goal is to become a skilled web developer and build professional websites and amazing projects in the future 🚀
+      </div>
     </div>
 
-    <div class="footer">
-      Made with ❤️ by ATUL PATEL
-    </div>
+    <footer>
+      Made by Atul using phone 📱
+    </footer>
   </div>
 
 </body>
